@@ -292,7 +292,7 @@ $dataTelp		= isset($_POST['txtTelp']) ? $_POST['txtTelp'] : '';
 							<label>Referensi Dari :</label>
 							<select class="form-control select2" data-placeholder="Pilih Referensi" name="cmbSumber">
 								<?php
-								  $dataSql = "SELECT * FROM ms_referensi WHERE status_referensi='Active' ORDER BY default_referensi ASC";
+								  $dataSql = "SELECT * FROM ms_referensi WHERE status_referensi='Active' ";
 								  $dataQry = mysql_query($dataSql, $koneksidb) or die ("Gagal Query".mysql_error());
 								  while ($dataRow = mysql_fetch_array($dataQry)) {
 									if ($dataSumber == $dataRow['kode_referensi']) {

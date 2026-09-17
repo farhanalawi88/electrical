@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 4.8.0
+-- version 4.8.5
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Waktu pembuatan: 04 Bulan Mei 2018 pada 11.59
--- Versi server: 10.1.31-MariaDB
--- Versi PHP: 5.6.35
+-- Generation Time: Sep 17, 2026 at 06:04 AM
+-- Server version: 10.1.38-MariaDB
+-- PHP Version: 5.6.40
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
@@ -25,7 +25,7 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `ms_barang`
+-- Table structure for table `ms_barang`
 --
 
 CREATE TABLE `ms_barang` (
@@ -44,7 +44,7 @@ CREATE TABLE `ms_barang` (
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 
 --
--- Dumping data untuk tabel `ms_barang`
+-- Dumping data for table `ms_barang`
 --
 
 INSERT INTO `ms_barang` (`kode_barang`, `kode_barcode`, `nama_barang`, `ukuran_barang`, `kode_kategori`, `kode_satuan`, `kode_merk`, `harga_jual`, `harga_beli`, `stok_barang`, `keterangan_barang`, `status_barang`) VALUES
@@ -227,7 +227,7 @@ INSERT INTO `ms_barang` (`kode_barang`, `kode_barcode`, `nama_barang`, `ukuran_b
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `ms_expedisi`
+-- Table structure for table `ms_expedisi`
 --
 
 CREATE TABLE `ms_expedisi` (
@@ -239,7 +239,7 @@ CREATE TABLE `ms_expedisi` (
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 
 --
--- Dumping data untuk tabel `ms_expedisi`
+-- Dumping data for table `ms_expedisi`
 --
 
 INSERT INTO `ms_expedisi` (`kode_expedisi`, `nama_expedisi`, `jasa_expedisi`, `keterangan_expedisi`, `status_expedisi`) VALUES
@@ -252,7 +252,7 @@ INSERT INTO `ms_expedisi` (`kode_expedisi`, `nama_expedisi`, `jasa_expedisi`, `k
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `ms_kategori`
+-- Table structure for table `ms_kategori`
 --
 
 CREATE TABLE `ms_kategori` (
@@ -264,7 +264,7 @@ CREATE TABLE `ms_kategori` (
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 
 --
--- Dumping data untuk tabel `ms_kategori`
+-- Dumping data for table `ms_kategori`
 --
 
 INSERT INTO `ms_kategori` (`kode_kategori`, `inisial_kategori`, `nama_kategori`, `keterangan_kategori`, `status_kategori`) VALUES
@@ -275,7 +275,7 @@ INSERT INTO `ms_kategori` (`kode_kategori`, `inisial_kategori`, `nama_kategori`,
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `ms_merk`
+-- Table structure for table `ms_merk`
 --
 
 CREATE TABLE `ms_merk` (
@@ -287,7 +287,7 @@ CREATE TABLE `ms_merk` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data untuk tabel `ms_merk`
+-- Dumping data for table `ms_merk`
 --
 
 INSERT INTO `ms_merk` (`kode_merk`, `inisial_merk`, `nama_merk`, `keterangan_merk`, `status_merk`) VALUES
@@ -305,7 +305,7 @@ INSERT INTO `ms_merk` (`kode_merk`, `inisial_merk`, `nama_merk`, `keterangan_mer
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `ms_referensi`
+-- Table structure for table `ms_referensi`
 --
 
 CREATE TABLE `ms_referensi` (
@@ -316,7 +316,7 @@ CREATE TABLE `ms_referensi` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data untuk tabel `ms_referensi`
+-- Dumping data for table `ms_referensi`
 --
 
 INSERT INTO `ms_referensi` (`kode_referensi`, `nama_referensi`, `keterangan_referensi`, `status_referensi`) VALUES
@@ -325,7 +325,7 @@ INSERT INTO `ms_referensi` (`kode_referensi`, `nama_referensi`, `keterangan_refe
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `ms_satuan`
+-- Table structure for table `ms_satuan`
 --
 
 CREATE TABLE `ms_satuan` (
@@ -337,7 +337,7 @@ CREATE TABLE `ms_satuan` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data untuk tabel `ms_satuan`
+-- Dumping data for table `ms_satuan`
 --
 
 INSERT INTO `ms_satuan` (`kode_satuan`, `inisial_satuan`, `nama_satuan`, `keterangan_satuan`, `status_satuan`) VALUES
@@ -348,7 +348,7 @@ INSERT INTO `ms_satuan` (`kode_satuan`, `inisial_satuan`, `nama_satuan`, `ketera
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `ms_supplier`
+-- Table structure for table `ms_supplier`
 --
 
 CREATE TABLE `ms_supplier` (
@@ -363,7 +363,7 @@ CREATE TABLE `ms_supplier` (
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 
 --
--- Dumping data untuk tabel `ms_supplier`
+-- Dumping data for table `ms_supplier`
 --
 
 INSERT INTO `ms_supplier` (`kode_supplier`, `inisial_supplier`, `nama_supplier`, `alamat_supplier`, `jenis_supplier`, `telp_supplier`, `keterangan_supplier`, `status_supplier`) VALUES
@@ -373,7 +373,7 @@ INSERT INTO `ms_supplier` (`kode_supplier`, `inisial_supplier`, `nama_supplier`,
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `ms_toko`
+-- Table structure for table `ms_toko`
 --
 
 CREATE TABLE `ms_toko` (
@@ -386,7 +386,7 @@ CREATE TABLE `ms_toko` (
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 
 --
--- Dumping data untuk tabel `ms_toko`
+-- Dumping data for table `ms_toko`
 --
 
 INSERT INTO `ms_toko` (`nama_toko`, `moto_toko`, `alamat_toko`, `telp_toko`, `email_toko`, `keterangan_toko`) VALUES
@@ -395,7 +395,7 @@ INSERT INTO `ms_toko` (`nama_toko`, `moto_toko`, `alamat_toko`, `telp_toko`, `em
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `ms_user`
+-- Table structure for table `ms_user`
 --
 
 CREATE TABLE `ms_user` (
@@ -412,11 +412,11 @@ CREATE TABLE `ms_user` (
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 
 --
--- Dumping data untuk tabel `ms_user`
+-- Dumping data for table `ms_user`
 --
 
 INSERT INTO `ms_user` (`kode_user`, `nama_user`, `telp_user`, `alamat_user`, `email_user`, `kelamin_user`, `username_user`, `password_user`, `status_user`, `user_group`) VALUES
-('U0001', 'Admin', '-', 'Bogor', '-', 'Pria', 'admin', '166118d9fe52df1659e879365ce16b06', 'Active', 8),
+('U0001', 'Admin', '-', 'Bogor', '-', 'Pria', 'admin', '21232f297a57a5a743894a0e4a801fc3', 'Active', 8),
 ('U0002', 'Sustiyaningsih', '-', '', '-', 'Wanita', 'tya', 'e10adc3949ba59abbe56e057f20f883e', 'Active', 2),
 ('U0003', 'Farhan Alawi', '081220209020', 'Bogor', 'farhan@sutrakabel.net', 'Pria', 'farhan', '0192023a7bbd73250516f069df18b500', 'Active', 1),
 ('U0004', 'ADMINISTRATOR', '-', '-', '-', 'Pria', 'administrator', 'cf2d3d3e596b8fdc377e0cb936aaddd3', 'Active', 1);
@@ -424,7 +424,7 @@ INSERT INTO `ms_user` (`kode_user`, `nama_user`, `telp_user`, `alamat_user`, `em
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `sys_akses`
+-- Table structure for table `sys_akses`
 --
 
 CREATE TABLE `sys_akses` (
@@ -436,7 +436,7 @@ CREATE TABLE `sys_akses` (
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 
 --
--- Dumping data untuk tabel `sys_akses`
+-- Dumping data for table `sys_akses`
 --
 
 INSERT INTO `sys_akses` (`akses_id`, `akses_group`, `akses_submenu`, `akses_dibuat`, `akses_diubah`) VALUES
@@ -512,7 +512,7 @@ INSERT INTO `sys_akses` (`akses_id`, `akses_group`, `akses_submenu`, `akses_dibu
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `sys_group`
+-- Table structure for table `sys_group`
 --
 
 CREATE TABLE `sys_group` (
@@ -523,7 +523,7 @@ CREATE TABLE `sys_group` (
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 
 --
--- Dumping data untuk tabel `sys_group`
+-- Dumping data for table `sys_group`
 --
 
 INSERT INTO `sys_group` (`group_id`, `group_nama`, `group_keterangan`, `group_status`) VALUES
@@ -534,7 +534,7 @@ INSERT INTO `sys_group` (`group_id`, `group_nama`, `group_keterangan`, `group_st
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `sys_menu`
+-- Table structure for table `sys_menu`
 --
 
 CREATE TABLE `sys_menu` (
@@ -547,7 +547,7 @@ CREATE TABLE `sys_menu` (
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 
 --
--- Dumping data untuk tabel `sys_menu`
+-- Dumping data for table `sys_menu`
 --
 
 INSERT INTO `sys_menu` (`menu_id`, `menu_nama`, `menu_icon`, `menu_urutan`, `menu_dibuat`, `menu_diubah`) VALUES
@@ -559,7 +559,7 @@ INSERT INTO `sys_menu` (`menu_id`, `menu_nama`, `menu_icon`, `menu_urutan`, `men
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `sys_submenu`
+-- Table structure for table `sys_submenu`
 --
 
 CREATE TABLE `sys_submenu` (
@@ -573,7 +573,7 @@ CREATE TABLE `sys_submenu` (
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 
 --
--- Dumping data untuk tabel `sys_submenu`
+-- Dumping data for table `sys_submenu`
 --
 
 INSERT INTO `sys_submenu` (`submenu_id`, `submenu_nama`, `submenu_menu`, `submenu_link`, `submenu_urutan`, `submenu_dibuat`, `submenu_diubah`) VALUES
@@ -601,7 +601,7 @@ INSERT INTO `sys_submenu` (`submenu_id`, `submenu_nama`, `submenu_menu`, `submen
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `tr_harga`
+-- Table structure for table `tr_harga`
 --
 
 CREATE TABLE `tr_harga` (
@@ -615,7 +615,7 @@ CREATE TABLE `tr_harga` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data untuk tabel `tr_harga`
+-- Dumping data for table `tr_harga`
 --
 
 INSERT INTO `tr_harga` (`id_harga`, `tgl_berlaku`, `kode_supplier`, `keterangan_harga`, `kode_user`, `status_harga`, `tgl_dibuat`) VALUES
@@ -631,7 +631,7 @@ INSERT INTO `tr_harga` (`id_harga`, `tgl_berlaku`, `kode_supplier`, `keterangan_
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `tr_harga_item`
+-- Table structure for table `tr_harga_item`
 --
 
 CREATE TABLE `tr_harga_item` (
@@ -644,7 +644,7 @@ CREATE TABLE `tr_harga_item` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data untuk tabel `tr_harga_item`
+-- Dumping data for table `tr_harga_item`
 --
 
 INSERT INTO `tr_harga_item` (`id_harga_item`, `id_harga`, `kode_barang`, `harga_beli`, `harga_jual`, `kode_user`) VALUES
@@ -1006,7 +1006,7 @@ INSERT INTO `tr_harga_item` (`id_harga_item`, `id_harga`, `kode_barang`, `harga_
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `tr_pembelian`
+-- Table structure for table `tr_pembelian`
 --
 
 CREATE TABLE `tr_pembelian` (
@@ -1019,11 +1019,12 @@ CREATE TABLE `tr_pembelian` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data untuk tabel `tr_pembelian`
+-- Dumping data for table `tr_pembelian`
 --
 
 INSERT INTO `tr_pembelian` (`kode_pembelian`, `kode_transaksi`, `tgl_pembelian`, `kode_supplier`, `total_pembelian`, `status_pembelian`) VALUES
 ('0001/PSA/IV/18', '0001/ODR/IV/18', '2018-04-30', 'SU001', 950000, 'Close'),
+('0001/PSA/IX/26', '0001/ODR/IX/26', '2026-09-17', 'SU001', 35700, 'Open'),
 ('0001/SKI/V/18', '0004/ODR/V/18', '2018-05-03', 'SU002', 5830624, 'Close'),
 ('0002/PSA/III/18', '0002/ODR/III/18', '2018-03-19', 'SU001', 1400000, 'Close'),
 ('0002/PSA/IV/18', '0002/ODR/IV/18', '2018-04-30', 'SU001', 641025, 'Close'),
@@ -1037,7 +1038,7 @@ INSERT INTO `tr_pembelian` (`kode_pembelian`, `kode_transaksi`, `tgl_pembelian`,
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `tr_pembelian_item`
+-- Table structure for table `tr_pembelian_item`
 --
 
 CREATE TABLE `tr_pembelian_item` (
@@ -1051,7 +1052,7 @@ CREATE TABLE `tr_pembelian_item` (
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 
 --
--- Dumping data untuk tabel `tr_pembelian_item`
+-- Dumping data for table `tr_pembelian_item`
 --
 
 INSERT INTO `tr_pembelian_item` (`id_pembelian_item`, `id_transaksi_item`, `kode_pembelian`, `kode_barang`, `harga_pembelian`, `jumlah_pembelian`, `keterangan_pembelian_item`) VALUES
@@ -1064,12 +1065,14 @@ INSERT INTO `tr_pembelian_item` (`id_pembelian_item`, `id_transaksi_item`, `kode
 (7, 0, '0003/PSA/IV/18', 'B00026', 2310, 10, ''),
 (9, 0, '0002/PSA/V/18', 'B00175', 3050000, 2, ''),
 (11, 18, '0001/SKI/V/18', 'B00086', 2650000, 2, ''),
-(12, 20, '0002/SKI/V/18', 'B00175', 2105000, 1, '');
+(12, 20, '0002/SKI/V/18', 'B00175', 2105000, 1, ''),
+(13, 21, '0001/PSA/IX/26', 'B00054', 10200, 1, ''),
+(14, 22, '0001/PSA/IX/26', 'B00050', 25500, 1, '');
 
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `tr_penjualan`
+-- Table structure for table `tr_penjualan`
 --
 
 CREATE TABLE `tr_penjualan` (
@@ -1088,7 +1091,7 @@ CREATE TABLE `tr_penjualan` (
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 
 --
--- Dumping data untuk tabel `tr_penjualan`
+-- Dumping data for table `tr_penjualan`
 --
 
 INSERT INTO `tr_penjualan` (`kode_penjualan`, `kode_transaksi`, `tgl_penjualan`, `kode_expedisi`, `nama_customer`, `kode_referensi`, `no_referensi`, `alamat_customer`, `telp_customer`, `total_ongkir`, `total_penjualan`, `status_penjualan`) VALUES
@@ -1101,12 +1104,13 @@ INSERT INTO `tr_penjualan` (`kode_penjualan`, `kode_transaksi`, `tgl_penjualan`,
 ('0004/RF001/III/18', '0004/ODR/III/18', '2018-03-19 00:00:00', '100', 'MAWI / MAEMUNAH', 'RF001', 'INV/20180315/XVIII/III/143323540', 'SITUPETE RT 01 RW 06 TANAH SEREAL, KOTA BOGOR, 16166 JAWA BARAT', '083811704818', 16616, 1307690, 'Close'),
 ('0003/RF001/IV/18', '0003/ODR/IV/18', '2018-04-11 00:00:00', '103', 'ANDREAS BUDIMAN', 'RF001', 'INV/20180410/XVIII/IV/150475352', 'PT. PRISSANT DELI KRISP JL. RAYA SENTUL KM 2,7 BLOK IIIB SENTUL, BOGOR 16810 - INDONESIA MOBILE: 0816-1777-4684 PHONE: 021-87954082 BABAKAN MADANG, KAB. BOGOR, 16810', '', 15000, 25000, 'Open'),
 ('0002/RF001/V/18', '0002/ODR/V/18', '2018-05-03 00:00:00', '100', 'RAYMOND', 'RF001', '564654654656', 'JL. ALTERNATIF SENTUL NO 01', '-', 25000, 7500000, 'Open'),
-('0005/RF001/V/18', '0005/ODR/V/18', '2018-05-03 00:00:00', '102', 'UJANG', 'RF001', '99288466502', 'JL. RAYA PADJAJARAN NO 01 ', '-', 15000, 3750000, 'Close');
+('0005/RF001/V/18', '0005/ODR/V/18', '2018-05-03 00:00:00', '102', 'UJANG', 'RF001', '99288466502', 'JL. RAYA PADJAJARAN NO 01 ', '-', 15000, 3750000, 'Close'),
+('0001/RF001/IX/26', '0001/ODR/IX/26', '2026-09-17 00:00:00', '100', 'DGFD', 'RF001', 'SDFSd', 'FSDFDSFDSF', 'sdfsdf', 50000, 36414, 'Open');
 
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `tr_penjualan_item`
+-- Table structure for table `tr_penjualan_item`
 --
 
 CREATE TABLE `tr_penjualan_item` (
@@ -1119,7 +1123,7 @@ CREATE TABLE `tr_penjualan_item` (
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 
 --
--- Dumping data untuk tabel `tr_penjualan_item`
+-- Dumping data for table `tr_penjualan_item`
 --
 
 INSERT INTO `tr_penjualan_item` (`id_penjualan_item`, `id_transaksi_item`, `kode_penjualan`, `kode_barang`, `harga_penjualan`, `jumlah_penjualan`) VALUES
@@ -1132,12 +1136,14 @@ INSERT INTO `tr_penjualan_item` (`id_penjualan_item`, `id_transaksi_item`, `kode
 (7, 0, '0003/RF001/IV/18', 'B00026', 2500, 10),
 (9, 0, '0002/RF001/V/18', 'B00175', 3750000, 2),
 (11, 18, '0004/RF001/V/18', 'B00086', 2703000, 2),
-(12, 20, '0005/RF001/V/18', 'B00175', 3750000, 1);
+(12, 20, '0005/RF001/V/18', 'B00175', 3750000, 1),
+(13, 21, '0001/RF001/IX/26', 'B00054', 10404, 1),
+(14, 22, '0001/RF001/IX/26', 'B00050', 26010, 1);
 
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `tr_pi`
+-- Table structure for table `tr_pi`
 --
 
 CREATE TABLE `tr_pi` (
@@ -1151,13 +1157,15 @@ CREATE TABLE `tr_pi` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data untuk tabel `tr_pi`
+-- Dumping data for table `tr_pi`
 --
 
 INSERT INTO `tr_pi` (`kode_pi`, `tgl_pi`, `kode_supplier`, `keterangan_pi`, `kode_user`, `no_referensi`, `status_pi`) VALUES
 ('0001/PI/IV/18', '2018-04-30', 'SU001', '', 'U0004', '', 'Open'),
+('0001/PI/PSA/IX/26', '2026-09-17', 'SU001', 'DSFDSF', 'U0001', '', 'Open'),
 ('0001/PI/V/18', '2018-05-03', 'SU002', '-', 'U0004', '-', 'Open'),
 ('0002/PI/IV/18', '2018-04-30', 'SU001', '', 'U0004', '-', 'Close'),
+('0002/PI/PSA/IX/26', '2026-09-17', 'SU001', 'SDFDSFS', 'U0001', '', 'Open'),
 ('0003/PI/IV/18', '2018-04-30', 'SU001', '-', 'U0004', '-', 'Open'),
 ('0004/PI/IV/18', '2018-04-30', 'SU001', '', 'U0004', '', 'Close'),
 ('0005/PI/IV/18', '2018-04-30', 'SU001', '-', 'U0004', '-', 'Close');
@@ -1165,7 +1173,7 @@ INSERT INTO `tr_pi` (`kode_pi`, `tgl_pi`, `kode_supplier`, `keterangan_pi`, `kod
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `tr_pi_item`
+-- Table structure for table `tr_pi_item`
 --
 
 CREATE TABLE `tr_pi_item` (
@@ -1173,28 +1181,31 @@ CREATE TABLE `tr_pi_item` (
   `kode_pi` char(25) NOT NULL,
   `kode_transaksi` char(30) NOT NULL,
   `kode_pembelian` char(30) NOT NULL,
-  `total_pembelian` int(6) NOT NULL
+  `total_pembelian` int(6) NOT NULL,
+  `no_tagihan_po` varchar(255) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data untuk tabel `tr_pi_item`
+-- Dumping data for table `tr_pi_item`
 --
 
-INSERT INTO `tr_pi_item` (`id_pi_item`, `kode_pi`, `kode_transaksi`, `kode_pembelian`, `total_pembelian`) VALUES
-(1, '0001/PI/IV/18', '0001/ODR/III/18', '0001/PSA/III/18', 543000),
-(2, '0002/PI/IV/18', '0001/ODR/IV/18', '0001/PSA/IV/18', 950000),
-(3, '0002/PI/IV/18', '0002/ODR/III/18', '0002/PSA/III/18', 1400000),
-(4, '0003/PI/IV/18', '0002/ODR/IV/18', '0002/PSA/IV/18', 641025),
-(5, '0004/PI/IV/18', '0003/ODR/III/18', '0003/PSA/III/18', 1487520),
-(6, '0004/PI/IV/18', '0004/ODR/III/18', '0004/PSA/III/18', 1282050),
-(7, '0005/PI/IV/18', '0003/ODR/IV/18', '0003/PSA/IV/18', 23100),
-(8, '0001/PI/V/18', '0004/ODR/V/18', '0001/SKI/V/18', 5830624),
-(9, '0001/PI/V/18', '0005/ODR/V/18', '0002/SKI/V/18', 2105000);
+INSERT INTO `tr_pi_item` (`id_pi_item`, `kode_pi`, `kode_transaksi`, `kode_pembelian`, `total_pembelian`, `no_tagihan_po`) VALUES
+(1, '0001/PI/IV/18', '0001/ODR/III/18', '0001/PSA/III/18', 543000, NULL),
+(2, '0002/PI/IV/18', '0001/ODR/IV/18', '0001/PSA/IV/18', 950000, NULL),
+(3, '0002/PI/IV/18', '0002/ODR/III/18', '0002/PSA/III/18', 1400000, NULL),
+(4, '0003/PI/IV/18', '0002/ODR/IV/18', '0002/PSA/IV/18', 641025, NULL),
+(5, '0004/PI/IV/18', '0003/ODR/III/18', '0003/PSA/III/18', 1487520, NULL),
+(6, '0004/PI/IV/18', '0004/ODR/III/18', '0004/PSA/III/18', 1282050, NULL),
+(7, '0005/PI/IV/18', '0003/ODR/IV/18', '0003/PSA/IV/18', 23100, NULL),
+(8, '0001/PI/V/18', '0004/ODR/V/18', '0001/SKI/V/18', 5830624, NULL),
+(9, '0001/PI/V/18', '0005/ODR/V/18', '0002/SKI/V/18', 2105000, NULL),
+(10, '0002/PI/PSA/IX/26', '0003/ODR/V/18', '0003/PSA/V/18', 3050000, 'DFDFSD'),
+(11, '0002/PI/PSA/IX/26', '0002/ODR/V/18', '0002/PSA/V/18', 6100000, 'SDFDF');
 
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `tr_retur_jual`
+-- Table structure for table `tr_retur_jual`
 --
 
 CREATE TABLE `tr_retur_jual` (
@@ -1207,7 +1218,7 @@ CREATE TABLE `tr_retur_jual` (
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 
 --
--- Dumping data untuk tabel `tr_retur_jual`
+-- Dumping data for table `tr_retur_jual`
 --
 
 INSERT INTO `tr_retur_jual` (`kode_retur_jual`, `tgl_retur_jual`, `no_referensi`, `kode_penjualan`, `kode_user`, `keterangan_retur_jual`) VALUES
@@ -1216,7 +1227,7 @@ INSERT INTO `tr_retur_jual` (`kode_retur_jual`, `tgl_retur_jual`, `no_referensi`
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `tr_retur_jual_item`
+-- Table structure for table `tr_retur_jual_item`
 --
 
 CREATE TABLE `tr_retur_jual_item` (
@@ -1230,7 +1241,7 @@ CREATE TABLE `tr_retur_jual_item` (
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 
 --
--- Dumping data untuk tabel `tr_retur_jual_item`
+-- Dumping data for table `tr_retur_jual_item`
 --
 
 INSERT INTO `tr_retur_jual_item` (`id_retur_jual_item`, `kode_retur_jual`, `id_penjualan_item`, `kode_barang`, `harga_retur_jual`, `jumlah_retur_jual`, `alasan_retur_jual`) VALUES
@@ -1239,7 +1250,7 @@ INSERT INTO `tr_retur_jual_item` (`id_retur_jual_item`, `kode_retur_jual`, `id_p
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `tr_retur_jual_tmp`
+-- Table structure for table `tr_retur_jual_tmp`
 --
 
 CREATE TABLE `tr_retur_jual_tmp` (
@@ -1255,7 +1266,7 @@ CREATE TABLE `tr_retur_jual_tmp` (
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `tr_si`
+-- Table structure for table `tr_si`
 --
 
 CREATE TABLE `tr_si` (
@@ -1269,20 +1280,22 @@ CREATE TABLE `tr_si` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data untuk tabel `tr_si`
+-- Dumping data for table `tr_si`
 --
 
 INSERT INTO `tr_si` (`kode_si`, `tgl_si`, `kode_referensi`, `keterangan_si`, `kode_user`, `total_si`, `status_si`) VALUES
 ('0001/SI/IV/18', '2018-04-30', 'RF001', '', 'U0004', 0, 'Close'),
+('0001/SI/IX/26', '2026-09-17', 'RF001', 'DSFDS', 'U0001', 0, 'Open'),
 ('0001/SI/V/18', '2018-05-03', 'RF001', '', 'U0004', 0, 'Open'),
 ('0002/SI/IV/18', '2018-04-30', 'RF001', '', 'U0004', 0, 'Open'),
+('0002/SI/IX/26', '2026-09-17', 'RF001', '', 'U0001', 0, 'Open'),
 ('0003/SI/IV/18', '2018-04-30', 'RF001', '', 'U0004', 0, 'Close'),
 ('0004/SI/IV/18', '2018-04-30', 'RF001', '', 'U0004', 0, 'Open');
 
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `tr_si_item`
+-- Table structure for table `tr_si_item`
 --
 
 CREATE TABLE `tr_si_item` (
@@ -1290,26 +1303,29 @@ CREATE TABLE `tr_si_item` (
   `kode_si` char(30) NOT NULL,
   `kode_penjualan` char(30) NOT NULL,
   `kode_transaksi` char(30) NOT NULL,
-  `total_penjualan` int(6) NOT NULL
+  `total_penjualan` int(6) NOT NULL,
+  `no_tagihan_so` varchar(255) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data untuk tabel `tr_si_item`
+-- Dumping data for table `tr_si_item`
 --
 
-INSERT INTO `tr_si_item` (`id_si_item`, `kode_si`, `kode_penjualan`, `kode_transaksi`, `total_penjualan`) VALUES
-(1, '0001/SI/IV/18', '0002/RF001/III/18', '0002/ODR/III/18', 1428000),
-(2, '0002/SI/IV/18', '0001/RF001/IV/18', '0001/ODR/IV/18', 969000),
-(3, '0002/SI/IV/18', '0001/RF001/III/18', '0001/ODR/III/18', 569700),
-(4, '0003/SI/IV/18', '0004/RF001/III/18', '0004/ODR/III/18', 1307690),
-(5, '0004/SI/IV/18', '0002/RF001/IV/18', '0002/ODR/IV/18', 653845),
-(6, '0004/SI/IV/18', '0003/RF001/III/18', '0003/ODR/III/18', 1522000),
-(7, '0001/SI/V/18', '0005/RF001/V/18', '0005/ODR/V/18', 3750000);
+INSERT INTO `tr_si_item` (`id_si_item`, `kode_si`, `kode_penjualan`, `kode_transaksi`, `total_penjualan`, `no_tagihan_so`) VALUES
+(1, '0001/SI/IV/18', '0002/RF001/III/18', '0002/ODR/III/18', 1428000, NULL),
+(2, '0002/SI/IV/18', '0001/RF001/IV/18', '0001/ODR/IV/18', 969000, NULL),
+(3, '0002/SI/IV/18', '0001/RF001/III/18', '0001/ODR/III/18', 569700, NULL),
+(4, '0003/SI/IV/18', '0004/RF001/III/18', '0004/ODR/III/18', 1307690, NULL),
+(5, '0004/SI/IV/18', '0002/RF001/IV/18', '0002/ODR/IV/18', 653845, NULL),
+(6, '0004/SI/IV/18', '0003/RF001/III/18', '0003/ODR/III/18', 1522000, NULL),
+(7, '0001/SI/V/18', '0005/RF001/V/18', '0005/ODR/V/18', 3750000, NULL),
+(8, '0002/SI/IX/26', '0003/RF001/V/18', '0003/ODR/V/18', 3750000, ''),
+(9, '0002/SI/IX/26', '0004/RF001/V/18', '0004/ODR/V/18', 5947232, '');
 
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `tr_transaksi`
+-- Table structure for table `tr_transaksi`
 --
 
 CREATE TABLE `tr_transaksi` (
@@ -1321,7 +1337,7 @@ CREATE TABLE `tr_transaksi` (
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 
 --
--- Dumping data untuk tabel `tr_transaksi`
+-- Dumping data for table `tr_transaksi`
 --
 
 INSERT INTO `tr_transaksi` (`kode_transaksi`, `tgl_transaksi`, `kode_user`, `status_transaksi`, `tgl_dibuat`) VALUES
@@ -1334,12 +1350,13 @@ INSERT INTO `tr_transaksi` (`kode_transaksi`, `tgl_transaksi`, `kode_user`, `sta
 ('0003/ODR/IV/18', '2018-04-11 00:00:00', 'U0004', 'Close', '0000-00-00 00:00:00'),
 ('0002/ODR/V/18', '2018-05-03 00:00:00', 'U0004', 'Open', '0000-00-00 00:00:00'),
 ('0004/ODR/V/18', '2018-05-03 00:00:00', 'U0004', 'Close', '2018-05-03 13:44:50'),
-('0005/ODR/V/18', '2018-05-03 00:00:00', 'U0004', 'Close', '2018-05-03 14:39:59');
+('0005/ODR/V/18', '2018-05-03 00:00:00', 'U0004', 'Close', '2018-05-03 14:39:59'),
+('0001/ODR/IX/26', '2026-09-17 00:00:00', 'U0001', 'Open', '2026-09-17 10:59:09');
 
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `tr_transaksi_item`
+-- Table structure for table `tr_transaksi_item`
 --
 
 CREATE TABLE `tr_transaksi_item` (
@@ -1353,7 +1370,7 @@ CREATE TABLE `tr_transaksi_item` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data untuk tabel `tr_transaksi_item`
+-- Dumping data for table `tr_transaksi_item`
 --
 
 INSERT INTO `tr_transaksi_item` (`id_transaksi_item`, `kode_transaksi`, `kode_barang`, `harga_pembelian`, `harga_penjualan`, `jumlah_transaksi`, `kode_user`) VALUES
@@ -1368,255 +1385,257 @@ INSERT INTO `tr_transaksi_item` (`id_transaksi_item`, `kode_transaksi`, `kode_ba
 (14, '0003/ODR/V/18', 'B00175', 2105000, 3750000, 1, ''),
 (18, '0004/ODR/V/18', 'B00086', 2650000, 2703000, 2, ''),
 (19, '0004/ODR/V/18', 'B00027', 66328, 67654, 8, ''),
-(20, '0005/ODR/V/18', 'B00175', 2105000, 3750000, 1, '');
+(20, '0005/ODR/V/18', 'B00175', 2105000, 3750000, 1, ''),
+(21, '0001/ODR/IX/26', 'B00054', 10200, 10404, 1, ''),
+(22, '0001/ODR/IX/26', 'B00050', 25500, 26010, 1, '');
 
 --
 -- Indexes for dumped tables
 --
 
 --
--- Indeks untuk tabel `ms_barang`
+-- Indexes for table `ms_barang`
 --
 ALTER TABLE `ms_barang`
   ADD PRIMARY KEY (`kode_barang`);
 
 --
--- Indeks untuk tabel `ms_expedisi`
+-- Indexes for table `ms_expedisi`
 --
 ALTER TABLE `ms_expedisi`
   ADD PRIMARY KEY (`kode_expedisi`);
 
 --
--- Indeks untuk tabel `ms_kategori`
+-- Indexes for table `ms_kategori`
 --
 ALTER TABLE `ms_kategori`
   ADD PRIMARY KEY (`kode_kategori`);
 
 --
--- Indeks untuk tabel `ms_merk`
+-- Indexes for table `ms_merk`
 --
 ALTER TABLE `ms_merk`
   ADD PRIMARY KEY (`kode_merk`);
 
 --
--- Indeks untuk tabel `ms_referensi`
+-- Indexes for table `ms_referensi`
 --
 ALTER TABLE `ms_referensi`
   ADD PRIMARY KEY (`kode_referensi`);
 
 --
--- Indeks untuk tabel `ms_satuan`
+-- Indexes for table `ms_satuan`
 --
 ALTER TABLE `ms_satuan`
   ADD PRIMARY KEY (`kode_satuan`);
 
 --
--- Indeks untuk tabel `ms_supplier`
+-- Indexes for table `ms_supplier`
 --
 ALTER TABLE `ms_supplier`
   ADD PRIMARY KEY (`kode_supplier`);
 
 --
--- Indeks untuk tabel `ms_user`
+-- Indexes for table `ms_user`
 --
 ALTER TABLE `ms_user`
   ADD PRIMARY KEY (`kode_user`);
 
 --
--- Indeks untuk tabel `sys_akses`
+-- Indexes for table `sys_akses`
 --
 ALTER TABLE `sys_akses`
   ADD PRIMARY KEY (`akses_id`);
 
 --
--- Indeks untuk tabel `sys_group`
+-- Indexes for table `sys_group`
 --
 ALTER TABLE `sys_group`
   ADD PRIMARY KEY (`group_id`);
 
 --
--- Indeks untuk tabel `sys_menu`
+-- Indexes for table `sys_menu`
 --
 ALTER TABLE `sys_menu`
   ADD PRIMARY KEY (`menu_id`);
 
 --
--- Indeks untuk tabel `sys_submenu`
+-- Indexes for table `sys_submenu`
 --
 ALTER TABLE `sys_submenu`
   ADD PRIMARY KEY (`submenu_id`);
 
 --
--- Indeks untuk tabel `tr_harga`
+-- Indexes for table `tr_harga`
 --
 ALTER TABLE `tr_harga`
   ADD PRIMARY KEY (`id_harga`);
 
 --
--- Indeks untuk tabel `tr_harga_item`
+-- Indexes for table `tr_harga_item`
 --
 ALTER TABLE `tr_harga_item`
   ADD PRIMARY KEY (`id_harga_item`);
 
 --
--- Indeks untuk tabel `tr_pembelian`
+-- Indexes for table `tr_pembelian`
 --
 ALTER TABLE `tr_pembelian`
   ADD PRIMARY KEY (`kode_pembelian`);
 
 --
--- Indeks untuk tabel `tr_pembelian_item`
+-- Indexes for table `tr_pembelian_item`
 --
 ALTER TABLE `tr_pembelian_item`
   ADD PRIMARY KEY (`id_pembelian_item`);
 
 --
--- Indeks untuk tabel `tr_penjualan`
+-- Indexes for table `tr_penjualan`
 --
 ALTER TABLE `tr_penjualan`
   ADD PRIMARY KEY (`kode_penjualan`);
 
 --
--- Indeks untuk tabel `tr_penjualan_item`
+-- Indexes for table `tr_penjualan_item`
 --
 ALTER TABLE `tr_penjualan_item`
   ADD PRIMARY KEY (`id_penjualan_item`);
 
 --
--- Indeks untuk tabel `tr_pi`
+-- Indexes for table `tr_pi`
 --
 ALTER TABLE `tr_pi`
   ADD PRIMARY KEY (`kode_pi`);
 
 --
--- Indeks untuk tabel `tr_pi_item`
+-- Indexes for table `tr_pi_item`
 --
 ALTER TABLE `tr_pi_item`
   ADD PRIMARY KEY (`id_pi_item`);
 
 --
--- Indeks untuk tabel `tr_retur_jual`
+-- Indexes for table `tr_retur_jual`
 --
 ALTER TABLE `tr_retur_jual`
   ADD PRIMARY KEY (`kode_retur_jual`);
 
 --
--- Indeks untuk tabel `tr_retur_jual_item`
+-- Indexes for table `tr_retur_jual_item`
 --
 ALTER TABLE `tr_retur_jual_item`
   ADD PRIMARY KEY (`id_retur_jual_item`);
 
 --
--- Indeks untuk tabel `tr_retur_jual_tmp`
+-- Indexes for table `tr_retur_jual_tmp`
 --
 ALTER TABLE `tr_retur_jual_tmp`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indeks untuk tabel `tr_si`
+-- Indexes for table `tr_si`
 --
 ALTER TABLE `tr_si`
   ADD PRIMARY KEY (`kode_si`);
 
 --
--- Indeks untuk tabel `tr_si_item`
+-- Indexes for table `tr_si_item`
 --
 ALTER TABLE `tr_si_item`
   ADD PRIMARY KEY (`id_si_item`);
 
 --
--- Indeks untuk tabel `tr_transaksi`
+-- Indexes for table `tr_transaksi`
 --
 ALTER TABLE `tr_transaksi`
   ADD PRIMARY KEY (`kode_transaksi`);
 
 --
--- Indeks untuk tabel `tr_transaksi_item`
+-- Indexes for table `tr_transaksi_item`
 --
 ALTER TABLE `tr_transaksi_item`
   ADD PRIMARY KEY (`id_transaksi_item`);
 
 --
--- AUTO_INCREMENT untuk tabel yang dibuang
+-- AUTO_INCREMENT for dumped tables
 --
 
 --
--- AUTO_INCREMENT untuk tabel `sys_akses`
+-- AUTO_INCREMENT for table `sys_akses`
 --
 ALTER TABLE `sys_akses`
   MODIFY `akses_id` int(4) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=455;
 
 --
--- AUTO_INCREMENT untuk tabel `sys_group`
+-- AUTO_INCREMENT for table `sys_group`
 --
 ALTER TABLE `sys_group`
   MODIFY `group_id` int(3) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 
 --
--- AUTO_INCREMENT untuk tabel `sys_menu`
+-- AUTO_INCREMENT for table `sys_menu`
 --
 ALTER TABLE `sys_menu`
   MODIFY `menu_id` int(3) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
--- AUTO_INCREMENT untuk tabel `sys_submenu`
+-- AUTO_INCREMENT for table `sys_submenu`
 --
 ALTER TABLE `sys_submenu`
   MODIFY `submenu_id` int(3) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=35;
 
 --
--- AUTO_INCREMENT untuk tabel `tr_harga`
+-- AUTO_INCREMENT for table `tr_harga`
 --
 ALTER TABLE `tr_harga`
   MODIFY `id_harga` int(6) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
 
 --
--- AUTO_INCREMENT untuk tabel `tr_harga_item`
+-- AUTO_INCREMENT for table `tr_harga_item`
 --
 ALTER TABLE `tr_harga_item`
   MODIFY `id_harga_item` int(6) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=1658;
 
 --
--- AUTO_INCREMENT untuk tabel `tr_pembelian_item`
+-- AUTO_INCREMENT for table `tr_pembelian_item`
 --
 ALTER TABLE `tr_pembelian_item`
-  MODIFY `id_pembelian_item` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
+  MODIFY `id_pembelian_item` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
 
 --
--- AUTO_INCREMENT untuk tabel `tr_penjualan_item`
+-- AUTO_INCREMENT for table `tr_penjualan_item`
 --
 ALTER TABLE `tr_penjualan_item`
-  MODIFY `id_penjualan_item` int(6) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
+  MODIFY `id_penjualan_item` int(6) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
 
 --
--- AUTO_INCREMENT untuk tabel `tr_pi_item`
+-- AUTO_INCREMENT for table `tr_pi_item`
 --
 ALTER TABLE `tr_pi_item`
-  MODIFY `id_pi_item` int(6) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
+  MODIFY `id_pi_item` int(6) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
 
 --
--- AUTO_INCREMENT untuk tabel `tr_retur_jual_item`
+-- AUTO_INCREMENT for table `tr_retur_jual_item`
 --
 ALTER TABLE `tr_retur_jual_item`
   MODIFY `id_retur_jual_item` int(5) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
--- AUTO_INCREMENT untuk tabel `tr_retur_jual_tmp`
+-- AUTO_INCREMENT for table `tr_retur_jual_tmp`
 --
 ALTER TABLE `tr_retur_jual_tmp`
   MODIFY `id` int(3) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
--- AUTO_INCREMENT untuk tabel `tr_si_item`
+-- AUTO_INCREMENT for table `tr_si_item`
 --
 ALTER TABLE `tr_si_item`
-  MODIFY `id_si_item` int(6) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+  MODIFY `id_si_item` int(6) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 
 --
--- AUTO_INCREMENT untuk tabel `tr_transaksi_item`
+-- AUTO_INCREMENT for table `tr_transaksi_item`
 --
 ALTER TABLE `tr_transaksi_item`
-  MODIFY `id_transaksi_item` int(6) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=21;
+  MODIFY `id_transaksi_item` int(6) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=23;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

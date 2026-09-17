@@ -1,8 +1,8 @@
 <?php
 # Konek ke Web Server Lokal
-$myHost	= "192.168.2.9";
+$myHost	= "localhost";
 $myUser	= "root";
-$myPass	= "password";
+$myPass	= "";
 $myDbs	= "electrical_db";
 
 # Konek ke Web Server Lokal
